@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.3 on win32)" generated="2024-06-19T13:57:20.119645" rpa="false" schemaversion="5">
+<suite id="s1" name="Create An Account" source="D:\Robot Framework\Tests\create_an_account.robot">
+<test id="s1-t1" name="Create an Account" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:20.260992" level="INFO">Opening browser 'chrome' to base url 'https://magento.softwaretestingboard.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-19T13:57:20.260992" elapsed="12.714670"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:32.977820" level="INFO">Clicking element 'xpath:/html/body/div[2]/header/div[1]/div/ul/li[3]/a'.</msg>
+<arg>${create_an_account_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:32.977314" elapsed="1.556617"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.533931" level="INFO">Typing text 'Raedd' into text field 'id:firstname'.</msg>
+<arg>${first_name_input}</arg>
+<arg>${first_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.533931" elapsed="0.076471"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.610402" level="INFO">Typing text 'Eleyann' into text field 'id:lastname'.</msg>
+<arg>${last_name_input}</arg>
+<arg>${last_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.610402" elapsed="0.068668"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.679070" level="INFO">Typing text 'raedd@gmail.com' into text field 'id:email_address'.</msg>
+<arg>${email_input}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.679070" elapsed="0.064263"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.743333" level="INFO">Typing text 'raed123!!' into text field 'id:password'.</msg>
+<arg>${password_input}</arg>
+<arg>${my_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.743333" elapsed="0.101258"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.844591" level="INFO">Typing text 'raed123!!' into text field 'id:password-confirmation'.</msg>
+<arg>${confirm_pass_input}</arg>
+<arg>${my_pass}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.844591" elapsed="0.078260"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-19T13:57:34.923885" level="INFO">Clicking element 'xpath://*[@id="form-validate"]/div/div[1]/button'.</msg>
+<arg>${create_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-19T13:57:34.923885" elapsed="3.375359"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Thank you for registering with Main Website Store.</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-06-19T13:57:38.300274" elapsed="0.012375"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-19T13:57:38.313648" elapsed="2.410017"/>
+</kw>
+<status status="PASS" start="2024-06-19T13:57:20.260992" elapsed="20.462673"/>
+</test>
+<status status="PASS" start="2024-06-19T13:57:20.136210" elapsed="20.587455"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Create An Account">Create An Account</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
